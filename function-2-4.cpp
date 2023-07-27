@@ -1,7 +1,6 @@
 #include <iostream>
 
 bool is_ascending(int array[], int n){
-int two = 0, five = 0, nine = 0;
 if (n < 1)
 {
     return false;
