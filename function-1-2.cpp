@@ -3,12 +3,12 @@ if (n < 1)
 {
     return 0;
 }else{
-    int avg = 0;
+    int sum = 0;
 for (int i = 0; i < n; i++)
 {
-    avg += array[i];
+    sum += array[i];
 }
-avg = avg/n;
+double avg = sum/n;
 return avg;
 }
 
