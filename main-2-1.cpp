@@ -1,5 +1,5 @@
 #include <iostream>
-#include "function-2-1.cpp"
+extern int min_element(int array[], int n);
 
 int main(){
     int n = 5;

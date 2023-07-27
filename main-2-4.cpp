@@ -1,6 +1,5 @@
 #include <iostream>
-#include "function-2-4.cpp"
-
+extern bool is_ascending(int array[], int n);
 int main(){
     int n = 5;
     int array[n] = {2, 2, 5, 1, 9};

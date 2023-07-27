@@ -1,5 +1,5 @@
 #include <iostream>
-#include "function-2-2.cpp"
+extern int max_element(int array[], int n);
 
 int main(){
     int n = 5;

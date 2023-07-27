@@ -1,5 +1,6 @@
 #include <iostream>
-#include "function-1-1.cpp"
+
+extern int array_sum(int array[], int n);
 
 int main(){
 

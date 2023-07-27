@@ -1,5 +1,5 @@
 #include <iostream>
-#include "function-1-4.cpp"
+extern int sum_two_arrays(int array[], int secondarray[], int n);
 
 int main(){
 int n = 3;

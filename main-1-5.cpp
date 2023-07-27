@@ -1,5 +1,5 @@
 #include <iostream>
-#include "function-1-5.cpp"
+extern int count_evens(int number);
 
 int main(){
 int number = 10;

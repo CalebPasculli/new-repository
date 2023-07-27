@@ -1,9 +1,9 @@
 #include <iostream>
-#include "function-1-2.cpp"
+extern double array_mean(int array[], int n);
 
 int main(){
 int n = 3;
-int array[n] = {1,2,3};
+int array[n] = {5,2,3};
 
 double result;
 result = array_mean(array, n);
