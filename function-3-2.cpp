@@ -3,7 +3,7 @@
 int median_array(int array[], int n){
 
 bool state = false;
-if (n < 1 || n % 2 != 0)
+if (n < 1 || n % 2 == 0)
 {
     return 0;
 }else{
@@ -30,11 +30,11 @@ while (state != true){
 
 
 }
-if (n % 2 != 0){
+
     int half = n/2;
     int median = array[half];
     return(median);
-}
+
 }
 }
 
