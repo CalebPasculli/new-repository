@@ -7,7 +7,7 @@ if (n < 1)
     return 0;
 }else{
 
-double average;
+double average = 0;
 for (int j = 0; j < n; j++){
     double count = 0;
     for (int k = 0; k < n; k++){
