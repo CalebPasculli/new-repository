@@ -3,7 +3,7 @@
 int median_array(int array[], int n){
 
 bool state = false;
-if (n < 1 || n % 2 == 0)
+if (n < 1 || n % 2 != 0)
 {
     return 0;
 }else{
