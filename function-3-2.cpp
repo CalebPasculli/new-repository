@@ -17,15 +17,18 @@ while (state != true){
     }
     
    } 
+    int ordered_count = 0;
    for (int i = 0; i < n-1; i++){
-        int ordered_count;
+        
         if (array[i] < array[i+1]){
             ordered_count++;
+        }
         if (ordered_count == n-1){
             state = true;
         }
     }
-    }
+
+
 }
 if (n % 2 != 0){
     int half = n/2;
@@ -37,5 +40,5 @@ if (n % 2 != 0){
     return(median);
 }
 }
-
 }
+
