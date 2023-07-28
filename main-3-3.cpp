@@ -7,7 +7,7 @@ int main(){
 
     double result = weighted_average(array, n);
 
-    std::cout << result << "\n";
+    std::cout << result;
 
     return 0;
 }
