@@ -20,7 +20,7 @@ void count_digits(int array[4][4]){
     {
         std::cout << i << ":" << counts[i] << ",";
     }
-    std::cout << 9 << ":" << counts[9] << "\n";
+    std::cout << 9 << ":" << counts[9] << ";" << "\n";
 
     
 
