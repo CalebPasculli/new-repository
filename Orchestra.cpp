@@ -17,9 +17,8 @@ int Orchestra::get_current_number_of_members(){
 
 
 bool Orchestra::has_instrument(std::string instrument){
-    for (int i = 0; i < no_members; i++)
-    {
-        if (array[i].get_instrument() == "instrument")
+    for (int i = 0; i < no_members; i++){
+        if (instrument.compare(array[i].get_instrument()) == 0)
         {
             return true;
         }
