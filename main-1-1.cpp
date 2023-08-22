@@ -1,13 +1,10 @@
-#include "Person.h"
 #include <iostream>
-
-int main(){
-extern Person* createPersonArray(int n);
-
-Person * result = createPersonArray(5);
-
-for(int i = 0; i < 5; i++){
-std::cout << result[i].name << " ";
-std::cout << result[i].age << "\n";
-}
+#include "Musician.h"
+int main() {
+Musician m1;
+std::cout << "Default instrument: " << m1.get_instrument() << ", Defaultexperience: " << m1.get_experience() << std::endl;
+Musician m2("guitar", 5);
+std::cout << "Instrument: " << m2.get_instrument() << ", Experience: " <<
+m2.get_experience() << std::endl;
+return 0;
 }
