@@ -13,6 +13,6 @@ int main(){
     std::cout << result;
 
     MusicBox * array = shelf2.get_contents();
-
+    
     return 0;
 }
