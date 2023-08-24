@@ -1,5 +1,5 @@
-#define STORESHELF
-#ifdef STORESHELF
+#define STORESHELF.h
+#ifdef STORESHELF.h
 #include <string>
 #include "MusicBox.h"
 
