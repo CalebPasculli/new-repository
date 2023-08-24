@@ -1,5 +1,5 @@
-#define STORESHELF.h
-#ifdef STORESHELF.h
+#define STORESHELF
+#ifdef STORESHELF
 #include <string>
 #include "MusicBox.h"
 
@@ -11,6 +11,8 @@ class StoreShelf{
     public:
     StoreShelf();                     // default constructor
     StoreShelf(int width);            // constructor for shelf with given width in centimetres
+
+    void buildShelf(int width);
 
     int get_width();                  // returns the width of the shelf in centimetres
 

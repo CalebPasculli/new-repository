@@ -1,5 +1,5 @@
-#define MUSICBOX.h
-#ifdef MUSICBOX.h
+#define MUSICBOX
+#ifdef MUSICBOX
 #include <string>
 
 class MusicBox{

@@ -1,15 +1,16 @@
 #include <string>
-#include "MusicBox.h"
 #include "StoreShelf.h"
+#include <iostream>
 StoreShelf::StoreShelf(){
     shelfWidth = 0;
     numBoxes = 0;
 };
 StoreShelf::StoreShelf(int width){
     shelfWidth = width;
-    array = new MusicBox [int(shelfWidth / get_width())];
-
+    numBoxes = 0;
+    array = new MusicBox [10];
 };
+
 
 int StoreShelf::get_width(){
     return(shelfWidth);
