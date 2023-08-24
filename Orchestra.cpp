@@ -41,5 +41,5 @@ return false;
 }
 
 Orchestra::~Orchestra(){
-
+delete [] array;
 }
