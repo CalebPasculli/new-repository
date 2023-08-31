@@ -1,6 +1,14 @@
 #include "bus.h"
 #include "vehicle.h"
+Bus::Bus():Vehicle(ID){
+    Bus::ID = 0;
+    timeOfEntry = std::time(NULL);
+}
 
+Bus::Bus(int ID):Vehicle(ID){
+    Bus::ID = ID;
+    timeOfEntry = std::time(NULL);
+}
 
 int Bus::getParkingDuration(){
 int result;

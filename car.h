@@ -1,11 +1,12 @@
 #ifndef CAR_H
 #define CAR_H
 #include "vehicle.h"
-class Car:Vehicle {
+class Car: public Vehicle {
 protected:
 
 public:
-Car(int id);
+Car();
+Car(int ID);
 int getParkingDuration();
 };
 #endif
