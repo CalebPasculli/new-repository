@@ -1,7 +1,7 @@
-#include "vehicle.h"
-#include "car.h"
-#include "motorbike.h"
-#include "bus.h"
+#include "Vehicle.h"
+#include "Car.h"
+#include "Motorbike.h"
+#include "Bus.h"
 #include <iostream>
 int main(){
 int c, m, b;

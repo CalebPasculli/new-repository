@@ -1,5 +1,5 @@
-#include "bus.h"
-#include "vehicle.h"
+#include "Bus.h"
+#include "Vehicle.h"
 Bus::Bus():Vehicle(ID){
     Bus::ID = 0;
     timeOfEntry = std::time(NULL);

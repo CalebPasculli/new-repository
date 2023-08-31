@@ -1,5 +1,5 @@
-#include "car.h"
-#include "vehicle.h"
+#include "Car.h"
+#include "Vehicle.h"
 
 Car::Car():Vehicle(ID){
 Car::ID = 0;
