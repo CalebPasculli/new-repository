@@ -40,7 +40,7 @@ void ParkingLot::unparkVehicle(int ID){
     }
     if (count == maxVehicles)
     {
-        std::cout << "Vehicle not in the lot\n";
+        std::cout << "Vehicle not in the lot";
     }
     
 
