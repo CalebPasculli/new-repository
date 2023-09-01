@@ -34,6 +34,7 @@ void ParkingLot::unparkVehicle(int ID){
     for (int i = 0; i < curVehicles; i++){
         if (vehicles[i]->getID() == ID){
             vehicles[i] = nullptr;
+            ParkingLot::curVehicles = curVehicles - 1;
         }else{
             count++;
         }
