@@ -25,12 +25,15 @@ void ParkingLot::parkVehicle(Vehicle * Vehicle){
     if(ParkingLot::getCount() == maxVehicles){
         std::cout << "The lot is full\n";
     }else{
-                    vehicles[curVehicles] = Vehicle;
-                    curVehicles++;
+            vehicles[curVehicles] = Vehicle;
+            curVehicles++;
         }
 }
 void ParkingLot::unparkVehicle(int ID){
-    if (vehicles[ID]->getID() == ID){
+    if (ID > maxVehicles){
+        std::cout << "Vehicle not in the lot\n";
+    }
+    else if(vehicles[ID]->getID() == ID){
         vehicles[ID] = nullptr;
         ParkingLot::curVehicles = curVehicles - 1;
     }else{
