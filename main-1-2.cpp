@@ -18,10 +18,12 @@ while (num < 10){
     lot.parkVehicle(park);
     num++;
     }else if(type == 2){
-    lot.parkVehicle(new Bus(num));
+    Vehicle* park = new Bus(num);
+    lot.parkVehicle(park);
     num++;
     }else if(type == 3){
-    lot.parkVehicle(new Motorbike(num));
+    Vehicle* park = new Motorbike(num);
+    lot.parkVehicle(park);
     num++;
     }
 }
