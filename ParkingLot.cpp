@@ -29,23 +29,20 @@ void ParkingLot::parkVehicle(Vehicle * Vehicle){
                     curVehicles++;
         }
 }
-void ParkingLot::unparkVehicle(int ID){
-    int count = 0;
-    if (ID > maxVehicles){
-        std::cout << "Vehicle not in the lot\n";
-    }else{
-        for (int i = 0; i < curVehicles; i++){
-        if (vehicles[i]->getID() == ID){
+void ParkingLot::unparkVehicle(int ID) {
+    bool vehicleFound = false;
+    for (int i = 0; i < curVehicles; i++) {
+        if (vehicles[i] != nullptr && vehicles[i]->getID() == ID) {
+            delete vehicles[i];
             vehicles[i] = nullptr;
-            ParkingLot::curVehicles = curVehicles - 1;
-        }else{
-            count++;
+            curVehicles--;
+            vehicleFound = true;
+            break;
         }
-    }}
-    
-    if (count == maxVehicles)
-    {
-        std::cout << "Vehicle not in the lot\n";
+    }
+
+    if (!vehicleFound) {
+        std::cout << "Vehicle not found in the lot\n";
     }
 }
 
