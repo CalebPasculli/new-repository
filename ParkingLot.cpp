@@ -31,6 +31,9 @@ void ParkingLot::parkVehicle(Vehicle * Vehicle){
 }
 void ParkingLot::unparkVehicle(int ID){
     int count = 0;
+    if(ID > maxVehicles){
+        std::cout << "Vehicle not in the lot\n";
+    }else{
     for (int i = 0; i < curVehicles; i++){
         if (vehicles[i]->getID() == ID){
             vehicles[i] = nullptr;
@@ -42,6 +45,7 @@ void ParkingLot::unparkVehicle(int ID){
     if (count == maxVehicles)
     {
         std::cout << "Vehicle not in the lot\n";
+    }
     }
 }
 
