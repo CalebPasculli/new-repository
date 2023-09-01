@@ -33,7 +33,6 @@ void ParkingLot::unparkVehicle(int ID) {
     bool vehicleFound = false;
     for (int i = 0; i < curVehicles; i++) {
         if (vehicles[i] != nullptr && vehicles[i]->getID() == ID) {
-            delete vehicles[i];
             vehicles[i] = nullptr;
             curVehicles--;
             vehicleFound = true;
