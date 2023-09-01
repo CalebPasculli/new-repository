@@ -12,5 +12,6 @@ ParkingLot(int maxSize);
 int getCount();
 void parkVehicle(Vehicle * Vehicle);
 void unparkVehicle(int ID);
+int countOverstayingVehicles(int maxParkingDuration);
 };
 #endif
