@@ -15,7 +15,6 @@ ParkingLot::ParkingLot(int maxSize){
     {
         vehicles[i] = nullptr;
     }
-    
 }
 
 int ParkingLot::getCount(){
@@ -26,28 +25,23 @@ void ParkingLot::parkVehicle(Vehicle * Vehicle){
     if(ParkingLot::getCount() == maxVehicles){
         std::cout << "The lot is full";
     }else{
-        int state = 0;
-        while (state == 0){
-            for (int i = 0; i < maxVehicles; i++){
-                if (vehicles[i] == nullptr){
                     vehicles[curVehicles] = Vehicle;
                     curVehicles++;
-                    state == 1;
-                }
-            }
         }
-    }
 }
 void ParkingLot::unparkVehicle(int ID){
-int state = 0;
-while (state == 0){
-for (int i = 0; i < maxVehicles; i++){
+    int count = 0;
+    for (int i = 0; i < maxVehicles; i++){
         if (vehicles[i]->getID() == ID){
             vehicles[i] = nullptr;
-            state == 1;
+        }else{
+            count++;
         }
     }
-    std::cout << "Vehicle not in the lot";
-}
+    if (count == maxVehicles)
+    {
+        std::cout << "Vehicle not in the lot\n";
+    }
+    
 
 }
