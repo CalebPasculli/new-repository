@@ -1,19 +1,20 @@
-#include "Appliance.h"
-#include "Fridge.h"
+#include "Car.h"
+#include "Tesla.h"
 #include <iostream>
 int main(){
-    Fridge f1;
-    std::cout << f1.get_isOn() << "\n";
-    std::cout << f1.getVolume() << "\n";
-    std::cout << f1.getPowerConsumption() << "\n \n";
+    Tesla t1('S', 1000);
 
-    double volume = 10;
-    int powerRating = 3;
-    Fridge f2(powerRating, volume);
+    std::cout << "model: " << t1.get_model() << "\n";
+    std::cout << "price: " << t1.get_price() << "\n";
+    std::cout << "emissions: " << t1.get_emissions() << "\n";
+    std::cout << "percentage: " << t1.get_batteryPercentage() << "\n\n\n";
 
-    std::cout << f2.get_isOn() << "\n";
-    std::cout << f2.getVolume() << "\n";
-    std::cout << f2.getPowerConsumption() << "\n";
+    t1.drive(500);
 
+    std::cout << "emissions: " << t1.get_emissions() << "\n";
+    std::cout << "percentage: " << t1.get_batteryPercentage() << "\n\n\n";
+
+    t1.chargeBattery(10);
+    std::cout << "percentage: " << t1.get_batteryPercentage() << "\n";
     return 0;
 }

@@ -1,19 +1,20 @@
-#include "Appliance.h"
-#include "TV.h"
+#include "Car.h"
+#include "Ford.h"
 #include <iostream>
 int main(){
-    TV t1;
-    std::cout << t1.get_isOn() << "\n";
-    std::cout << t1.getScreenSize() << "\n";
-    std::cout << t1.getPowerConsumption() << "\n \n";
+    Ford t1(3, 1000);
 
-    double screenSize = 100;
-    int powerRating = 3;
-    TV t2(powerRating, screenSize);
+    std::cout << "model: " << t1.get_badgeNumber() << "\n";
+    std::cout << "price: " << t1.get_price() << "\n";
+    std::cout << "emissions: " << t1.get_emissions() << "\n";
+    std::cout << "percentage: " << t1.get_litresOfFuel() << "\n\n\n";
 
-    std::cout << t2.get_isOn() << "\n";
-    std::cout << t2.getScreenSize() << "\n";
-    std::cout << t2.getPowerConsumption() << "\n";
+    t1.drive(10);
 
+    std::cout << "emissions: " << t1.get_emissions() << "\n";
+    std::cout << "percentage: " << t1.get_litresOfFuel() << "\n\n\n";
+
+    t1.refuel(10);
+    std::cout << "percentage: " << t1.get_litresOfFuel() << "\n";
     return 0;
 }
