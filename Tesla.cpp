@@ -16,7 +16,7 @@ void Tesla::set_model(char model){
 char Tesla::get_model(){
     return(model);
 }
-void Tesla::set_batteryPercentage(int batteryPercentage){
+void Tesla::set_batteryPercentage(float batteryPercentage){
     if(batteryPercentage > 0){
         if(batteryPercentage < 100 ){
             Tesla::batteryPercentage = batteryPercentage; 
@@ -28,7 +28,7 @@ void Tesla::set_batteryPercentage(int batteryPercentage){
     }
 
 }
-int Tesla::get_batteryPercentage(){
+float Tesla::get_batteryPercentage(){
     return(batteryPercentage);
 }
 void Tesla::chargeBattery(int mins){

@@ -10,8 +10,8 @@ class Tesla : public Car{
     Tesla(char model, int price);
     void set_model(char model);
     char get_model();
-    void set_batteryPercentage(int batteryPercentage);
-    int get_batteryPercentage();
+    void set_batteryPercentage(float batteryPercentage);
+    float get_batteryPercentage();
     void chargeBattery(int mins);            
     void drive(int kms);   
 };
