@@ -42,10 +42,11 @@ void Tesla::drive(int kms){
     driven = Tesla::get_batteryPercentage() * 5 - kms;
     if (driven < 0){
         kms = get_batteryPercentage() * 5;
+        kms = 460;
     }
 
     emissions = (kms * 74);
     percent = get_batteryPercentage() - (kms * 0.2);
-    Tesla::set_emissions(emissions);
+    Tesla::set_emissions(kms * 74);
     Tesla::set_batteryPercentage(percent);
 }

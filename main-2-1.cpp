@@ -9,12 +9,16 @@ int main(){
     std::cout << "emissions: " << t1.get_emissions() << "\n";
     std::cout << "percentage: " << t1.get_batteryPercentage() << "\n\n\n";
 
-    t1.drive(500);
+    t1.drive(1000);
 
     std::cout << "emissions: " << t1.get_emissions() << "\n";
     std::cout << "percentage: " << t1.get_batteryPercentage() << "\n\n\n";
 
     t1.chargeBattery(10);
     std::cout << "percentage: " << t1.get_batteryPercentage() << "\n";
-    return 0;
+ 
+
+    float num = 60840/234;
+    std::cout << "MATHSSSSS: " << num;
+   return 0;
 }
