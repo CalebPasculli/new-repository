@@ -32,13 +32,13 @@ float Tesla::get_batteryPercentage(){
     return(batteryPercentage);
 }
 void Tesla::chargeBattery(int mins){
-    int percent = (mins * 0.5) + (Tesla::get_batteryPercentage());
+    float percent = (mins * 0.5) + (Tesla::get_batteryPercentage());
     Tesla::set_batteryPercentage(percent);
 }        
 void Tesla::drive(int kms){
     int emissions;
-    int percent;
-    int driven;
+    float percent;
+    float driven;
     driven = Tesla::get_batteryPercentage() * 5 - kms;
     if (driven < 0){
         kms = get_batteryPercentage() * 5;

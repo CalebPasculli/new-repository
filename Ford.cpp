@@ -34,8 +34,8 @@ void Ford::refuel(float litres){
 }            
 void Ford::drive(int kms){
     int emissions;
-    int litres;
-    int driven;
+    float litres;
+    float driven;
     driven = Ford::get_litresOfFuel() * 5 - kms;
     if (driven < 0){
         kms = Ford::get_litresOfFuel() * 5;
