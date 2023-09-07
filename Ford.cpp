@@ -39,7 +39,6 @@ void Ford::drive(int kms){
     driven = Ford::get_litresOfFuel() * 5 - kms;
     if (driven < 0){
         kms = Ford::get_litresOfFuel() * 5;
-        kms = 260;
     }
 
     emissions = (kms * 234);

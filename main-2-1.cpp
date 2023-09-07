@@ -17,8 +17,5 @@ int main(){
     t1.chargeBattery(10);
     std::cout << "percentage: " << t1.get_batteryPercentage() << "\n";
  
-
-    float num = 60840/234;
-    std::cout << "MATHSSSSS: " << num;
    return 0;
 }
