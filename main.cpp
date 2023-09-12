@@ -10,22 +10,17 @@ int main(){
     std::string name = "Adelaide University";
     std::string location = "North Terrace";
     University uni(name, location);
-    std::cout<< "Name: " << uni.get_name() << " Location: " << uni.get_location() << "\n";
 
 
     uni.addCourse(01, "Maths");
     Course course = uni.get_course();
-    std::cout<< "Name: " << course.get_name() << " ID: " << course.get_id() << "\n";
 
-    Student student("Caleb", 22);
-    Student p1;
+    Student student;
     course.addPerson(&student);
-    p1 = *course.get_person();
-    std::cout<< "Name: " << p1.get_name() << " ID: " << course.get_id() << "\n";
-
-    
 
 
+    Gradebook book1;
+    book1.addGrade(22, 01, "Report", 75);
 
     return 0;
 }

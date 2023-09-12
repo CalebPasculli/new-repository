@@ -8,6 +8,6 @@ class Grade {
         int value;
     public:
     Grade();
-    Grade(int student_id, std::string assingment, int value);
+    Grade(int student_id, std::string assignment, int value);
 };
 #endif

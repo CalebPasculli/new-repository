@@ -5,8 +5,8 @@ Grade::Grade(){
     assignment = ' ';
     value = 0;
 }
-Grade::Grade(int student_id, std::string assingment, int value){
+Grade::Grade(int student_id, std::string assignment, int value){
     Grade::student_id = student_id;
-    Grade::assignment = ' ';
+    Grade::assignment = assignment;
     Grade::value = value;
 }
