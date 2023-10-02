@@ -1,26 +1,18 @@
-#include "University.h"
-#include "Course.h"
-#include "Grade.h"
-#include "Gradebook.h"
-#include "Person.h"
-#include "Student.h"
-#include <string>
-#include <iostream>
-int main(){
-    std::string name = "Adelaide University";
-    std::string location = "North Terrace";
-    University uni(name, location);
 
+// main.cpp
+#include "UnitTest.h"
+#include "EquivalenceTests.h"
+#include "InvoiceTest.h"
 
-    uni.addCourse(01, "Maths");
-    Course course = uni.get_course();
+int main() {
+    UnitTest unitTest;
+    unitTest.runTests();
 
-    Student student;
-    course.addPerson(&student);
+    EquivalenceTests equivalenceTests;
+    equivalenceTests.runTests();
 
-
-    Gradebook book1;
-    book1.addGrade(22, 01, "Report", 75);
+    InvoiceTest invoiceTest;
+    invoiceTest.runTests();
 
     return 0;
 }
