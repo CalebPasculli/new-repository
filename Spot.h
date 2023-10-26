@@ -6,23 +6,11 @@ public:
 std::tuple<int, int> location;
 char category;
 private:
-Spot(int x, int y, char category){
-location = {x,y};
-Spot::category = category;
-}
-Spot(): Spot(0,0,'X'){}
-
-std::tuple<int, int> getLoc(){
-    return(location);
-}
-char getCategory(){
-    return(category);
-}
-void setLoc(int x, int y){
-    location = {x,y};
-}
-void setCategory(char category){
-    Spot::category = category;
-}
+Spot(int x, int y, char category);
+Spot();
+std::tuple<int, int> getLoc();
+char getCategory();
+void setLoc(int x, int y);
+void setCategory(char category);
 };
 #endif
