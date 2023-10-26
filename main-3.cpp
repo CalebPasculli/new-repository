@@ -5,7 +5,6 @@
 #include "Persona.h"
 #include "Play.h"
 int main(){
-    Spot S(0, 0, 'X');
 
     return 0;
 }
