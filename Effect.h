@@ -1,12 +1,8 @@
-#ifndef GAMEENTITY_H
-#define GAMEENTITY_H
-class GameEntity{
-private:
-std::tuple<int, int> position;
-char type;
+#ifndef EFFECT_H
+#define EFFECT_H
+#include "GameEntity.h"
+class Effect{
 public:
-GameEntity(int x, int y, char type);
-std::tuple<int, int> getPos():;
-char getType()
+virtual void apply(GameEntity& entity)=0;
 };
 #endif
