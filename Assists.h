@@ -6,7 +6,7 @@
 #include <cmath>
 class Assists{
 public:
-Assists();
+Assists(){};
 static std::tuple<int, int> createRandomLoc(int matrixWidth, int matrixHeight){
 srand(time(0));
 std::tuple<int, int> loc = {rand()%matrixWidth, rand()%matrixHeight};
