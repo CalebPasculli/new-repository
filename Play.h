@@ -29,7 +29,7 @@ class Play{
     }
     void playCycle(int maxCycles, double snareTriggerDistance){
         int personaCount = 0;
-        for (int i = 0; i < std::size(matrix); i++){
+        for (int i = 0; i < 15; i++){
             if(matrix[i]->getCategory() == 'P'){
                 personaCount++;
             }
@@ -40,19 +40,13 @@ class Play{
                 matrix[i]->shift(0,1);
             }
             for (int i = 0; i < currPersona; i++){
-                for (int j = currPersona; j < std::size(matrix); j++){
+                for (int j = currPersona; j < 15; j++){
                     if( Assists::evaluateDistance(matrix[i]->getLoc(),matrix[j]->getLoc()) == snareTriggerDistance){
                         matrix[j]->implement(*matrix[i]);
                         currPersona--;
                     }
                 }
             }
-            for (int i = 0; i < currPersona; i++)
-            {
-                /* code */
-            }
-            
-
         }
         std::cout << "Maximum number of cycles reached. Game over.";
     }
