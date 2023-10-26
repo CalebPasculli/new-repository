@@ -3,6 +3,7 @@
 #include "Spot.h"
 class Influence{
 public:
+Influence();
 virtual void implement(Spot& spot) = 0;
 };
 #endif
