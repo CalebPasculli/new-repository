@@ -2,10 +2,10 @@
 #define SPOT_H
 #include <tuple>
 class Spot{
-public:
+private:
 std::tuple<int, int> location;
 char category;
-private:
+public:
 Spot(int x, int y, char category){
 location = {x,y};
 Spot::category = category;
