@@ -17,5 +17,8 @@ virtual void implement(Spot& spot){
     spot.setCategory('S');
     operative = false;
 }
+virtual void shift(int dx, int dy){
+setLoc(std::get<0>(getLoc()) + dx, std::get<1>(getLoc()) + dy);
+}
 };
 #endif
